@@ -1,6 +1,50 @@
+var majorKey = 42;
+if(majorKey >= 53){
+  majorKey = majorKey + 42;
+} else {
+  majorKey = majorKey - 13;
+}
+majorKey = majorKey + "11";
+var array = [];
+for(i = 0; i < majorKey.length; i++){
+  array[i] = majorKey.charAt(i);
+}
+array.shift();
+array.pop();
+
+var rihanna = 0;
+for(i = 3; i > 0; i--){
+  rihanna += i;
+}
+majorKey = parseInt(majorKey);
+rihanna = parseInt(rihanna);
+
+majorKey = majorKey + rihanna;
+
+if (majorKey <= 60) {
+  majorKey = 14
+}else if (majorKey = 2930){
+  majorKey = 27;
+}else {
+  majorKey = 2;
+};
+var i = 10;
+while (i > 0) {
+  majorKey += 1;
+  i--;
+}
+function augment(val) {
+  val = val.toString();
+  if (val.length > 1) {
+    val = val.substr(1);
+    majorKey = val;
+  }
+}
+augment(majorKey);
+console.log(majorKey);
+
 /*
 1. Start with the number 42 and set that equal to `majorKey`
-
 2. Create condition logic to check if the `majorKey` is great or equal to 53
 2-1. If true, add 42 to `majorKey`
 2-2. If false, subtract 13 from `majorKey`
